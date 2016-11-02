@@ -6,9 +6,16 @@ public class Customer {
 	private String firstName=null;
     private String lastName = null;
     private String email=null;
+    private boolean newCustomer = false;
     
     
-    public String getEmail() {
+    public boolean isNewCustomer() {
+		return newCustomer;
+	}
+	public void setNewCustomer(boolean newCustomer) {
+		this.newCustomer = newCustomer;
+	}
+	public String getEmail() {
 		return email;
 	}
 	public void setEmail(String email) {
